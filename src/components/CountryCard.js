@@ -4,6 +4,7 @@ import countries from './countries';
 const CountryCard = () => {
   const [index, setIndex] = useState(0);
   const { name, capital, language, currency, flag } = countries[index];
+
   const randomCountry = () => {
     let randomCountry = Math.floor(Math.random() * countries.length);
     setIndex(randomCountry);
